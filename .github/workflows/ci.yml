@@ -1,4 +1,4 @@
-name: Build website
+name: CI
 
 on: push
 
@@ -15,7 +15,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '8.16.x'
-    - name: Build website
+    - name: Build with Jekyll
       run: |
         gem install bundler
         chmod +x build.sh
