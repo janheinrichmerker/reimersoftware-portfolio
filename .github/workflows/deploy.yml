@@ -1,33 +1,28 @@
-name: Deploy website
 
-on: 
-  push:
+name: Deploy
+
+on:
+  pull_request:
+    types: [closed]
     branches:
       - master
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: Build website
-      run: |
-        chmod +x build.sh
-        ./build.sh
-
   deploy:
-    needs: build
 
     runs-on: ubuntu-latest
+    if: github.event.pull_request.merged
 
     steps:
-    - name: Deploying via SSH
+    - name: checkout
+      if: github.event.pull_request.merged
+      uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Deploy to Uperspace
       uses: appleboy/ssh-action@v0.0.6
       with:
-        host: ${{ secrets.HOST }}
-        username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
+        username: reimer
+        host: pizzaro.uberspace.de
+        key: ${{ secrets.DEPLOY_KEY }}
         script: refresh-portfolio
