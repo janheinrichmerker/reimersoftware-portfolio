@@ -16,6 +16,6 @@ jobs:
       uses: appleboy/ssh-action@v0.0.6
       with:
         username: reimer
-        host: pizzaro.uberspace.de
+        host: pizarro.uberspace.de
         key: ${{ secrets.DEPLOY_KEY }}
         script: refresh-portfolio
