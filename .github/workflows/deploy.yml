@@ -2,23 +2,16 @@
 name: Deploy
 
 on:
-  pull_request:
-    types: [closed]
-    branches:
+  push:	
+    branches:	
       - master
 
 jobs:
   deploy:
 
     runs-on: ubuntu-latest
-    if: github.event.pull_request.merged
 
     steps:
-    - name: checkout
-      if: github.event.pull_request.merged
-      uses: actions/checkout@v1
-      with:
-        ref: master
     - name: Deploy to Uperspace
       uses: appleboy/ssh-action@v0.0.6
       with:
