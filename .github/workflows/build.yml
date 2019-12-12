@@ -1,0 +1,14 @@
+name: Build website
+
+on: push
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build website
+      run: './build.sh'
+      
