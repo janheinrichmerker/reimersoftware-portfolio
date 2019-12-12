@@ -1,6 +1,9 @@
 name: Deploy website
 
-on: [push]
+on: 
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -12,6 +15,12 @@ jobs:
     - name: Build website
       run: './build.sh'
 
+  deploy:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
     - name: Deploying via SSH
       uses: appleboy/ssh-action@v0.0.6
       with:
