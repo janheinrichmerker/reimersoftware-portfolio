@@ -9,6 +9,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6.4'
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '8.16.1'
     - name: Build website
-      run: './build.sh'
+      run: |
+        gem install bundler
+        chmod +x build.sh
+        ./build.sh
       
