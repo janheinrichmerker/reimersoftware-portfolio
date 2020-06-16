@@ -57,7 +57,4 @@ Eine permanente inhaltliche Kontrolle der verlinkten Seiten
 ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. 
 Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
 
-*Quelle: [eRecht24][2]*
-
-[1]: https://www.e-recht24.de/impressum-generator.html
-[2]: https://www.e-recht24.de/muster-disclaimer.html
+Quelle: [eRecht24](https://www.e-recht24.de/impressum-generator.html)
