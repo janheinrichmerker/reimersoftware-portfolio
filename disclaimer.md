@@ -1,8 +1,10 @@
 ---
 title: Impressum/Disclaimer
-permalink: /disclaimer/
+permalink: /imprint/
 redirect_from:
 - /disclaimer.html
+- /disclaimer/index.html
+- /imprint.html
 ---
 
 # Impressum
