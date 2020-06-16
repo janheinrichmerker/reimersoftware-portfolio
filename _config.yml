@@ -1,28 +1,27 @@
 # Meta information
-title: Heinrich Reimer Software
-description: Android development with love.
+title: Reimer Software
+description: Open source development with love.
 license: All rights reserved.
-# url: https://heinrichreimer.github.io # Use in development
-url: https://heinrichreimer.com
+url: https://reimer.dev
 company:
-  name: Heinrich Reimer Software
+  name: Reimer Software
   adress:
-    street: Barfüßerstraße 7
+    street: Große Märkerstraße 20
     zip: 06108
     city: Halle (Saale)
     country: Germany
-  email: info@heinrichreimer.com
-  telephone: "+49 1749273954"
+  email: info@reimer.dev
+  telephone: "+49 174 9273954"
   vat_id: DE315339671
 author:
   name: Jan Heinrich Reimer
   adress:
-    street: Barfüßerstraße 7
+    street: Große Märkerstraße 20
     zip: 06108
     city: Halle (Saale)
     country: Germany
-  email: heinrich@heinrichreimer.com
-  telephone: "+49 1749273954"
+  email: heinrich@reimer.dev
+  telephone: "+49 174 9273954"
 social:
   default:
     image: /res/images/social/social_facebook.png
@@ -32,16 +31,12 @@ social:
     link: https://www.facebook.com/HeinrichReimer
     image: /res/images/social/social_facebook.png
   twitter:
-    username: H1iReimer
-    link: https://twitter.com/H1iReimer
+    username: ReimerSoftware
+    link: https://twitter.com/ReimerSoftware
     image: /res/images/social/social_twitter.png
-  google_plus:
-    username: HeinrichReimer
-    link: https://plus.google.com/+HeinrichReimer
-    image: /res/images/social/social_google_plus.png
   github:
-    username: heinrichreimer
-    link: https://github.com/heinrichreimer
+    username: reimersoftware
+    link: https://github.com/reimersoftware
   linkedin:
     link: https://www.linkedin.com/in/heinrich-reimer-680877120
   xing:
@@ -51,7 +46,6 @@ social:
 webmaster_verifications:
   google: 5mySK6jpuoQ7RT2vFF-GKGFtb4FWZwxLZ4aBcLwvUdw
   bing: 3653BD8AC68D24520E97C345142CC6FA
-# host: github # Use in development
 host: uberspace
 keywords:
   - Android
