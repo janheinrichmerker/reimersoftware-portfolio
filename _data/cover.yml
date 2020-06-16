@@ -1,7 +1,7 @@
 image: /res/images/title.jpg
 logo: /res/images/logos/logo_brand.svg
-title: Heinrich Reimer
-subtitle: Android development with love.
+title: Reimer Software
+subtitle: Open source development with love.
 button:
   title: Get in touch
-  link: /#contact
+  link: mailto:contact@reimer.dev
