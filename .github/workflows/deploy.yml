@@ -11,10 +11,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-ruby@v1
+      with:
+        ruby-version: '2.6.x'
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '8.16.x'
+    - name: Build with Jekyll
+      run: |
+        gem install bundler
+        chmod +x build.sh
+        ./build.sh
     - name: Deploy to Uperspace
-      uses: appleboy/ssh-action@v0.0.6
+      uses: appleboy/scp-action@v0.0.5
       with:
         username: reimer
         host: pizarro.uberspace.de
         key: ${{ secrets.DEPLOY_KEY }}
-        script: refresh-portfolio
+        source: _site
+        strip_components: 1
+        rm: true
+        target: ${{ secrets.DEPLOY_TARGET_PATH }}
