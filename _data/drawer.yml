@@ -11,19 +11,12 @@ items:
   - title: Libraries
     icon: mdi:book
     link: /#libraries
-  - title: Contact
-    icon: send
-    link: /#contact
 
   - divider: true
 
   - title: CV
     icon: mdi:cv
     link: https://stackoverflow.com/story/heinrich-reimer
-    external: true
-  - title: Google+
-    icon: mdi:google-plus
-    link: https://plus.google.com/+HeinrichReimer
     external: true
   - title: GitHub
     icon: mdi:github-circle
@@ -37,6 +30,6 @@ items:
   - divider: true
     
   - title: Imprint / Disclaimer
-    link: /disclaimer/
+    link: /imprint/
   - title: Privacy
     link: /privacy/
