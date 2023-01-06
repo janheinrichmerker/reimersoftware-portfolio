@@ -1,8 +1,8 @@
-[![GitHub Actions](https://img.shields.io/github/workflow/status/reimersoftware/portfolio/CI?style=flat-square)](https://github.com/reimersoftware/portfolio/actions)
+[![GitHub Actions](https://img.shields.io/github/actions/workflow/status/heinrichreimer/reimersoftware-portfolio/ci.yml?branch=master&style=flat-square)](https://github.com/heinrichreimer/reimersoftware-portfolio/actions/workflows/ci.yml)
 
 # 🌐 portfolio
 
-Reimer Software's [portfolio website](https://reimer.software).
+Reimer Software's (former) [portfolio website](https://reimer.software).
 
 ## Build
 
